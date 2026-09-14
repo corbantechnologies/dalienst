@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Architectural Icon -->
+  <g transform="translate(4, 6)">
+    <rect width="48" height="48" rx="10" fill="#0B1120"/>
+    <rect x="1" y="1" width="46" height="46" rx="9" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <path d="M16 14H27C33.075 14 38 18.925 38 25C38 31.075 33.075 36 27 36H16V14Z" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16 14V38" stroke="#eb8a0c" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M22 22H27C28.657 22 30 23.343 30 25C30 26.657 28.657 28 27 28H22V22Z" fill="#eb8a0c" fill-opacity="0.25" stroke="#eb8a0c" stroke-width="2"/>
+    <circle cx="34" cy="18" r="2.2" fill="#10b981"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="64" y="32" font-family="'Google Sans', system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.02em" fill="#0F172A">
+    DALIENST
+  </text>
+  <text x="64" y="47" font-family="'Google Sans', system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" letter-spacing="0.16em" fill="#eb8a0c">
+    SOFTWARE ARCHITECT &amp; ENGINEER
+  </text>
+</svg>

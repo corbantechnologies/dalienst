@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0B1120"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  
+  <!-- Stylized Geometric Architectural D -->
+  <path d="M20 16H34C41.732 16 48 22.268 48 30C48 37.732 41.732 44 34 44H20V16Z" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 16V48" stroke="#eb8a0c" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M28 26H34C36.2091 26 38 27.7909 38 30C38 32.2091 36.2091 34 34 34H28V26Z" fill="#eb8a0c" fill-opacity="0.2" stroke="#eb8a0c" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Tech Accent Dot -->
+  <circle cx="43" cy="21" r="3" fill="#10b981"/>
+</svg>
