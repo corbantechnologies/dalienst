@@ -11,9 +11,9 @@ export default function TechStackGrid() {
 
   return (
     <section id="stack" className="w-full bg-slate-50 py-16 sm:py-24 border-b border-slate-200">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12">
         {/* Section Header */}
-        <div className="max-w-3xl space-y-3 mb-12 sm:mb-16">
+        <div className="max-w-5xl space-y-3 mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white border border-slate-200 text-xs font-semibold text-corporate-primary shadow-2xs">
             <Layers className="w-3.5 h-3.5 text-corporate-primary" />
             Architectural Spectrum

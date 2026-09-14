@@ -4,8 +4,8 @@ import { ArrowRight, Building2, CheckCircle2, ChevronRight, ExternalLink } from 
 export default function Hero() {
   return (
     <section id="about" className="relative w-full bg-white border-b border-slate-200 pt-28 sm:pt-36 pb-16 sm:pb-20 overflow-hidden bg-grid-white">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl space-y-6">
+      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
+        <div className="max-w-5xl space-y-6">
           {/* Top Eyebrow Badges */}
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-slate-100 border border-slate-200 text-xs font-semibold text-corporate-primary">
@@ -19,12 +19,12 @@ export default function Hero() {
           </div>
 
           {/* Main Hero Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1.15]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.12]">
             Engineering Mission-Critical Cloud Platforms, Financial Ledgers &amp; Telecom Systems
           </h1>
 
           {/* Executive Narrative */}
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-4xl">
             I am <strong className="text-slate-900 font-semibold">Dalienst Owino Oduor</strong>, an executive software engineer and systems architect specializing in high-concurrency cloud software, automated double-entry accounting ledgers, and carrier-grade messaging infrastructure. 
             Through my corporate enterprise firm, <strong className="text-slate-900 font-semibold">Corban Technologies LTD</strong>, I architect, cloud-host, and scale mission-critical software solutions across East Africa—delivering custom multi-tenant banking, telecom marketing, and automated commerce engines with dedicated 99.9% uptime.
           </p>

@@ -70,9 +70,9 @@ export default function CompanySpotlight() {
         <div className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-corporate-emerald/20 blur-3xl" />
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl space-y-4 mb-12 sm:mb-16">
+        <div className="max-w-5xl space-y-4 mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/10 border border-white/15 text-xs font-semibold text-corporate-gold backdrop-blur-sm">
             <Building2 className="w-3.5 h-3.5 text-corporate-gold" />
             Corporate Technology House
