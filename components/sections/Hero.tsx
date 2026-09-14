@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Building2, CheckCircle2, ChevronRight, Download, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Building2, CheckCircle2, ChevronRight, ExternalLink } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -20,13 +20,13 @@ export default function Hero() {
 
           {/* Main Hero Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1.15]">
-            Engineering Mission-Critical Platforms, Financial Ledgers &amp; Applied AI Across East Africa
+            Engineering Mission-Critical Cloud Platforms, Financial Ledgers &amp; Telecom Systems
           </h1>
 
           {/* Executive Narrative */}
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
-            I am <strong className="text-slate-900 font-semibold">Dalienst Owino Oduor</strong>, a systems architect and software engineer with a track record of transforming complex institutional and commercial workflows into secure, automated software platforms. 
-            Through my corporate technology house, <strong className="text-slate-900 font-semibold">Corban Technologies LTD</strong>, I architect and cloud-host commercial solutions across core banking, telecom marketing, and finance compliance—while spearheading flagship enterprise digital transformations for premier institutional clients like <strong className="text-slate-900 font-semibold">Tamarind Management Limited</strong>.
+            I am <strong className="text-slate-900 font-semibold">Dalienst Owino Oduor</strong>, an executive software engineer and systems architect specializing in high-concurrency cloud software, automated double-entry accounting ledgers, and carrier-grade messaging infrastructure. 
+            Through my corporate enterprise firm, <strong className="text-slate-900 font-semibold">Corban Technologies LTD</strong>, I architect, cloud-host, and scale mission-critical software solutions across East Africa—delivering custom multi-tenant banking, telecom marketing, and automated commerce engines with dedicated 99.9% uptime.
           </p>
 
           {/* CTAs */}
@@ -37,17 +37,19 @@ export default function Hero() {
             >
               Explore Corban Technologies <ArrowRight className="w-3.5 h-3.5" />
             </Link>
+            <a
+              href="https://www.corbantechnologies.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-md bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold transition-colors inline-flex items-center gap-1.5 shadow-xs"
+            >
+              corbantechnologies.org <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+            </a>
             <Link
               href="#platforms"
               className="px-5 py-2.5 rounded-md bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 text-xs font-semibold transition-colors inline-flex items-center gap-1.5"
             >
               View 6 Core Platforms <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-            </Link>
-            <Link
-              href="#enterprise"
-              className="px-5 py-2.5 rounded-md bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 text-xs font-semibold transition-colors inline-flex items-center gap-1.5"
-            >
-              Enterprise Case Studies (Tamarind)
             </Link>
           </div>
 
@@ -69,9 +71,9 @@ export default function Hero() {
               <p className="text-[11px] text-slate-500">Official Meta Tech Provider</p>
             </div>
             <div className="space-y-1">
-              <p className="text-2xl font-bold text-slate-900 tracking-tight">75% Faster</p>
-              <p className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider">Approval Latency</p>
-              <p className="text-[11px] text-slate-500">Fraud anomaly detection ledger</p>
+              <p className="text-2xl font-bold text-slate-900 tracking-tight">99.9%</p>
+              <p className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider">Cloud Reliability</p>
+              <p className="text-[11px] text-slate-500">Dedicated hosting architecture</p>
             </div>
           </div>
         </div>

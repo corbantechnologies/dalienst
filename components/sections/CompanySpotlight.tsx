@@ -8,7 +8,6 @@ import {
   Layers,
   Sparkles,
   ExternalLink,
-  Cpu,
   BadgeCheck,
   Send,
   BookOpen,
@@ -22,8 +21,8 @@ export default function CompanySpotlight() {
     {
       icon: Building2,
       name: "SACCO & Cooperative Technology",
-      description: "Core banking, double-entry GL accounting, and loan engines powering Kenyan cooperatives.",
-      deployments: "Tamarind Sacco · Sprout Capital Sacco · Wananchi Mali",
+      description: "Cloud-native core banking, double-entry GL accounting, and loan engines powering Kenyan cooperatives.",
+      deployments: "Wananchi Mali SACCO Core · 3 Live Deployments",
       tag: "FinTech"
     },
     {
@@ -44,14 +43,14 @@ export default function CompanySpotlight() {
       icon: Ticket,
       name: "Event Ticketing & Passes",
       description: "Frictionless M-Pesa mobile ticketing, encrypted QR gate passes, and sub-0.4s scanning.",
-      deployments: "Sherehe Tickets Kenya · The L-Boogie Event (Tamarind)",
+      deployments: "Sherehe Tickets Kenya · High-Capacity Event Passes",
       tag: "Ticketing"
     },
     {
       icon: Truck,
       name: "Logistics & Fleet OS",
       description: "Asset-light logistics coordination, digital 4-side vehicle inspection scans, and corridor pricing.",
-      deployments: "CT Logistics · CT Drive Transport Platform (In Progress)",
+      deployments: "CT Logistics · CT Drive Transport Platform",
       tag: "Logistics"
     },
     {
@@ -76,12 +75,22 @@ export default function CompanySpotlight() {
         <div className="max-w-3xl space-y-4 mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/10 border border-white/15 text-xs font-semibold text-corporate-gold backdrop-blur-sm">
             <Building2 className="w-3.5 h-3.5 text-corporate-gold" />
-            Corporate Vehicle &amp; Engineering House
+            Corporate Technology House
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
-            Corban Technologies LTD
-          </h2>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
+              Corban Technologies LTD
+            </h2>
+            <a
+              href="https://www.corbantechnologies.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-corporate-primary hover:bg-orange-600 text-white text-xs font-semibold transition-all shadow-sm shrink-0"
+            >
+              Visit Corporate Website <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
             As <strong className="text-white font-semibold">Founder, Managing Director &amp; Lead Software Engineer</strong>, 
@@ -154,12 +163,22 @@ export default function CompanySpotlight() {
               All 6 software divisions are 100% architected, owned, and cloud-hosted under <strong>Corban Technologies LTD</strong>.
             </span>
           </div>
-          <Link
-            href="#platforms"
-            className="text-corporate-primary hover:text-orange-400 font-semibold inline-flex items-center gap-1 shrink-0"
-          >
-            Explore Live Platforms <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.corbantechnologies.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-white font-semibold inline-flex items-center gap-1"
+            >
+              corbantechnologies.org <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <Link
+              href="#platforms"
+              className="text-corporate-primary hover:text-orange-400 font-semibold inline-flex items-center gap-1 shrink-0"
+            >
+              Explore Live Platforms <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

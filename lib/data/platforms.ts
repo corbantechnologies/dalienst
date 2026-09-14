@@ -30,7 +30,7 @@ export const PLATFORMS_DATA: PlatformItem[] = [
       "Enterprise core banking engine tailored for Kenyan SACCOs, chamas, and microfinance institutions. Replaces error-prone manual spreadsheets with an automated double-entry general ledger where every deposit, loan disbursement, fee deduction, and interest repayment automatically balances without manual journal intervention.",
     businessImpact:
       "Eliminates spreadsheet errors, guarantees Trial Balance equilibrium (Total DR == Total CR), automates member credit qualification, and delivers sub-5ms Redis caching for instantaneous multi-branch transactions.",
-    realWorldClients: ["Tamarind Sacco", "Sprout Capital Sacco", "Wananchi Mali Cooperative"],
+    realWorldClients: ["Wananchi Mali SACCO Core", "Licensed Kenyan Cooperatives", "Microfinance & Credit Institutions"],
     techStack: ["Django REST Framework", "Next.js", "PostgreSQL", "Redis", "Safaricom Daraja M-Pesa", "Vercel"],
     capabilities: [
       "Automated Double-Entry General Ledger (GL) posting",
@@ -116,8 +116,8 @@ export const PLATFORMS_DATA: PlatformItem[] = [
     overview:
       "High-concurrency mobile commerce and event ticketing engine. Built for concerts, festivals, and venue organizers, providing instantaneous Safaricom Daraja STK Push checkouts, tamper-proof vector tickets, and mobile gate validator scanners.",
     businessImpact:
-      "Successfully deployed as the primary ticketing and revenue gateway for high-profile events—including The L-Boogie Event by Tamarind—processing thousands of concurrent ticket purchases with zero payment drops.",
-    realWorldClients: ["The L-Boogie Event (Tamarind)", "Regional Concert Organizers", "Corporate Conferences"],
+      "Successfully deployed as the primary ticketing and revenue gateway for high-profile concerts and conferences, processing thousands of concurrent ticket purchases with zero payment drops.",
+    realWorldClients: ["Live Music Concerts & Festivals", "Regional Event Organizers", "Corporate Conferences"],
     techStack: ["Next.js 16", "React 19", "TypeScript", "Django REST Framework", "PostgreSQL", "M-Pesa Daraja STK Push"],
     capabilities: [
       "Instantaneous mobile phone STK Push payment authorization",

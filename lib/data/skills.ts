@@ -1,57 +1,98 @@
-export interface SkillCategory {
-  category: string;
-  description: string;
-  skills: {
+export interface StackTier {
+  id: string;
+  tierNumber: string;
+  name: string;
+  tagline: string;
+  focusArea: string;
+  technologies: {
     name: string;
-    level: string;
+    role: string;
+    badge?: string;
   }[];
+  capabilities: string[];
 }
 
-export const SKILL_CATEGORIES: SkillCategory[] = [
+export const STACK_TIERS: StackTier[] = [
   {
-    category: "Modern Web & Frontend",
-    description: "Building responsive, high-speed, and accessible enterprise interfaces",
-    skills: [
-      { name: "Next.js 15 / 16 (App Router / RSC)", level: "Advanced" },
-      { name: "React 19 & TypeScript", level: "Advanced" },
-      { name: "Tailwind CSS v4 & Vanilla CSS", level: "Expert" },
-      { name: "TanStack Query v5", level: "Advanced" },
-      { name: "Radix UI & Shadcn", level: "Advanced" },
-      { name: "Progressive Web Apps (PWA)", level: "Advanced" }
+    id: "backend-core",
+    tierNumber: "LAYER 01",
+    name: "Core Banking, Distributed APIs & Ledgers",
+    tagline: "High-concurrency business logic, transactional integrity & double-entry accounting",
+    focusArea: "Core Banking & Enterprise Backends",
+    technologies: [
+      { name: "Python / Django", role: "Enterprise Business Logic", badge: "Primary Core" },
+      { name: "Django REST Framework", role: "High-Throughput RESTful APIs" },
+      { name: "PostgreSQL", role: "Relational Ledger & Complex Queries", badge: "Production DB" },
+      { name: "Drizzle ORM", role: "Type-Safe SQL Compilation" },
+      { name: "Redis", role: "Sub-5ms In-Memory Caching & Session Store" },
+      { name: "Node.js / Express", role: "Asynchronous Microservices" }
+    ],
+    capabilities: [
+      "Automated Double-Entry General Ledger balancing (Assets, Liabilities, Equity, P&L)",
+      "Non-blocking asynchronous JSON audit logging middleware with zero API latency",
+      "Strict decimal precision arithmetic eliminating floating-point drift",
+      "Multi-tenant database isolation and role-based permissions (RBAC)"
     ]
   },
   {
-    category: "Backend Systems & APIs",
-    description: "Designing resilient business logic, audit middleware, and high-throughput endpoints",
-    skills: [
-      { name: "Python (Django & Django REST Framework)", level: "Expert" },
-      { name: "Node.js (Express & Server Actions)", level: "Advanced" },
-      { name: "PostgreSQL Architecture & Indexing", level: "Advanced" },
-      { name: "Drizzle ORM & Django ORM", level: "Expert" },
-      { name: "Redis In-Memory Caching", level: "Intermediate" },
-      { name: "RESTful API Design & Webhooks", level: "Expert" }
+    id: "telecom-payments",
+    tierNumber: "LAYER 02",
+    name: "Telecom Infrastructure & Mobile Money Rails",
+    tagline: "Carrier-grade messaging pipelines, blue-tick telemetry & automated mobile settlements",
+    focusArea: "FinTech & Carrier Integrations",
+    technologies: [
+      { name: "Meta WhatsApp Cloud API", role: "Enterprise Broadcast Hub (v19.0)", badge: "Meta Tech Provider" },
+      { name: "Safaricom Daraja M-Pesa", role: "C2B, B2C & STK Push Settlement", badge: "Live Rails" },
+      { name: "Alphanumeric Bulk SMS", role: "Automatic Offline Fallback Gateway" },
+      { name: "Resend API", role: "Verified Domain Transactional Email" },
+      { name: "Cloudinary CDN", role: "Direct Multipart Media Streaming" }
+    ],
+    capabilities: [
+      "Official Meta WhatsApp Cloud API interconnect with permanent system user credentials",
+      "Real-time blue tick telemetry webhooks (SENT → DELIVERED → READ ✓✓)",
+      "Instantaneous Safaricom Daraja STK Push mobile checkout authorization",
+      "Automated credit wallet accounting (1 SMS = 1 Credit | 1 WhatsApp = 2 Credits)"
     ]
   },
   {
-    category: "Telecom & FinTech Integrations",
-    description: "Interfacing with carrier-grade messaging rails and automated payment gateways",
-    skills: [
-      { name: "Meta WhatsApp Business Cloud API", level: "Official Tech Provider" },
-      { name: "Safaricom Daraja M-Pesa (C2B, B2C, STK)", level: "Expert" },
-      { name: "Alphanumeric Bulk SMS Gateways", level: "Advanced" },
-      { name: "ProfitRoom Booking API", level: "Advanced" },
-      { name: "Resend Email & Cloudinary Media", level: "Advanced" }
+    id: "frontend-apps",
+    tierNumber: "LAYER 03",
+    name: "Application & Interface Architecture",
+    tagline: "High-performance responsive web applications, server components & progressive mobile apps",
+    focusArea: "Modern Web & Mobile Interfaces",
+    technologies: [
+      { name: "Next.js 16 / 15", role: "App Router & Server Components (RSC)", badge: "Framework" },
+      { name: "React 19", role: "Declarative Interface Runtime" },
+      { name: "TypeScript", role: "End-to-End Strict Static Typing", badge: "Standard" },
+      { name: "Tailwind CSS v4", role: "Modern Design Token Architecture" },
+      { name: "TanStack Query v5", role: "Server State Synchronization & Caching" },
+      { name: "Progressive Web Apps", role: "Offline-Resilient Service Worker Caching" }
+    ],
+    capabilities: [
+      "Server-side data compilation with near-instant First Contentful Paint",
+      "Frictionless 64-character tokenized 'no-login' client document portals",
+      "Dynamic CSS Custom Property theme injection across tenant shells",
+      "Installable mobile PWAs running without browser chrome on Android & iOS"
     ]
   },
   {
-    category: "Applied AI & Cloud Infrastructure",
-    description: "Context injection, production LLMs, and automated deployment pipelines",
-    skills: [
-      { name: "Google Generative AI (Gemini Models)", level: "Advanced" },
-      { name: "Context Injection & RAG Pipelines", level: "Advanced" },
-      { name: "Railway, Vercel & Cloud Hosting", level: "Advanced" },
-      { name: "Docker Containerization", level: "Intermediate" },
-      { name: "Git Workflow & Automated Migrations", level: "Advanced" }
+    id: "applied-ai-cloud",
+    tierNumber: "LAYER 04",
+    name: "Applied AI & Cloud Governance",
+    tagline: "Targeted context injection, verified grounding & dedicated infrastructure reliability",
+    focusArea: "AI Reasoning & Cloud Infrastructure",
+    technologies: [
+      { name: "Google Generative AI", role: "Gemini Context Reasoning Models", badge: "Applied AI" },
+      { name: "Context Injection Engines", role: "SQL-Grounded Dynamic Slicing" },
+      { name: "Railway Cloud", role: "Production PostgreSQL & API Hosting" },
+      { name: "Vercel Edge Network", role: "Global Low-Latency Static & Serverless" },
+      { name: "Docker", role: "Containerized Microservices & Reproducibility" }
+    ],
+    capabilities: [
+      "Lightweight dynamic context injection passing SQL aggregates without multi-megabyte hangs",
+      "Strict data isolation ensuring AI prompts only access authorized organizational data",
+      "Automated database migrations and environment governance across white-label instances",
+      "Dedicated production cloud hosting maintaining 99.9% operational availability"
     ]
   }
 ];
@@ -97,24 +138,4 @@ export const ENGINEERING_PRINCIPLES: EngineeringPrinciple[] = [
       "As an official Meta Verified Tech Provider, we connect directly to the Meta WhatsApp Cloud API via permanent system user tokens. When mobile handsets are offline, our dispatch router automatically falls back to carrier-grade Bulk SMS routes.",
     badge: "98% Reach"
   }
-];
-
-export interface EducationItem {
-  degree: string;
-  institution: string;
-  period: string;
-}
-
-export const EDUCATION_DATA: EducationItem = {
-  degree: "Bachelor of Science in Computer Science",
-  institution: "South Eastern Kenya University (SEKU)",
-  period: "August 2020 – April 2024"
-};
-
-export const CERTIFICATIONS_DATA: string[] = [
-  "Networking Essentials — Cisco NetAcad",
-  "Python Programming — Kaggle",
-  "Google Hustle Academy — HubSpot Academy",
-  "Executive Diploma in Finance Management — Udemy",
-  "Web Development (HTML, CSS, JavaScript) — Udemy"
 ];
